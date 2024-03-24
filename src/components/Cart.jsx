@@ -19,9 +19,10 @@ const Cart = () => {
 
     return (
         <div>
-            <div className={` fixed right-0 top-0 w-full bg-gray-600 h-full p-5 text-white sm:w-[23vw] mb-3 ${activeCart ? "translate-x-0" : "translate-x-full"} transition-all duration-700 z-50 `}>
+            <div className={` fixed right-0 top-0 w-full  bg-gray-600 h-full p-5 text-white sm:w-[23vw] mb-3 ${activeCart ? "translate-x-0" : "translate-x-full"} transition-all duration-700 z-50 `}>
+               <div className=' overflow-y-scroll scrollbar-hidden   overflow-hidden scroll-smooth sm:h-[450px] h-[330px]'>
                 <div className=' flex justify-between items-center my-3'>
-                    <span className=' text-xl font-bold  '>My Order</span>
+                   <span className=' text-xl font-bold  '>My Order</span>
                     <IoMdClose onClick={() => setActiveCart(!activeCart)} className=' border-2 border-gray-400 text-gray-400 font-bold text-xl rounded-md hover:text-red-500 hover:border-red-500 cursor-pointer' />
 
                 </div>
@@ -39,7 +40,7 @@ const Cart = () => {
                     );
                 }) : <h2 className=' text-center font-bold text-xl'>Your Cart is empty</h2>}
 
-
+</div>
 
 
 
