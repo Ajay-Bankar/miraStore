@@ -7,7 +7,7 @@ import NonVegCard from './NonVegCard';
 
 
 const NonVegItem = () => {
-    console.log(VegItem);
+    console.log(NonVegItem);
 
   return (
 
