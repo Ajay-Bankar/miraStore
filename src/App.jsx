@@ -6,21 +6,24 @@ import Error from './Pages/Error'
 import All from './Pages/All'
 import Veg from './Pages/Veg'
 import Lunch from './Pages/Lunch'
-import Breakfast from './Pages/Breakfast'
+import Breakfast from './Pages/Dinner'
 import Nonveg from './Pages/Nonveg'
+import Dinner from './Pages/Dinner'
+import Popup from './components/Popup'
 
 const App = () => {
   return (
     <div>
        <BrowserRouter>
        <Routes>
+        {/* <Popup/> */}
         
         <Route path='/' element = {<Home />} />
         <Route path='success' element = {<Success />} />
         <Route path='all' element = {<All />} /> 
         <Route path='veg' element = {<Veg />} />
         <Route path='lunch' element ={ <Lunch/>} />
-        <Route path='breakfast' element={ <Breakfast/>} />
+        <Route path='dinner' element={ <Dinner />} />
         <Route path='nonveg' element={ <Nonveg/>} />
 
         <Route path='*' element = {<Error/>} />

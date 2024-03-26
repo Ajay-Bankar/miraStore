@@ -8,6 +8,7 @@
     text-align: start;
     letter-spacing: 2px;
     margin-left: 2px;
+    color: black;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {

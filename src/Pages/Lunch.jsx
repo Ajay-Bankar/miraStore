@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import LunchItem from '../components/lunchcompo/LunchItem'
 
 const Lunch = () => {
   return (
-    <div>
+    <div className=' text-white'>
       <Navbar/>
-      <h1>this is lunch page</h1>
+      <LunchItem/>
     </div>
   )
 }

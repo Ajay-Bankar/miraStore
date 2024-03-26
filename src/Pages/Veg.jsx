@@ -13,7 +13,7 @@ const Veg = () => {
       <Navbar/>
       {/* <Slider/> */}
 
-      <div className=' mt-2 sm:mt-7 sm:*:text-4xl sm:*:font-bold text-center text-xl font-bold text-red-400 sm:*:text-red-600'><h1>Peace Begins on Your Plate.</h1></div>
+      <div className=' mt-2 sm:mt-7 sm:*:text-4xl sm:*:font-bold text-center text-xl font-bold text-red-400 sm:*:text-red-600 animate-pulse'><h1>Peace Begins on Your Plate.</h1></div>
 
       
       

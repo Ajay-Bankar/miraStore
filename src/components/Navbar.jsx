@@ -7,7 +7,7 @@ const navData = [
     { title: "Veg", linkTo: "veg" },
     { title: "Nonveg", linkTo: "nonveg"},
     { title: "Lunch", linkTo: "lunch"},
-    { title: "Breakfast", linkTo: "breakfast"}
+    { title: "Dinner", linkTo: "dinner"}
 ];
 
 const Navbar = () => {
@@ -23,11 +23,13 @@ const Navbar = () => {
 
                 <div className='flex justify-between px-2'>
                     <div className='sm:p-7 mt-5 p-0 ml-2 '>
-                        <input className='sm:w-[350px] sm:h-[50px] w-[250px]  h-[35px] rounded-lg outline-none' type="text" placeholder='Search Now' />
+                        <input className='sm:w-[350px] sm:h-[50px] w-[250px]  h-[35px] rounded-lg outline-none text-black'  type="text" placeholder='Search Now' />
                     </div>
 
                     <div onClick={() => setOpen(!open)} className='mt-5 p-0 sm:hidden block '>
-                        {open ? <i className="fa-solid fa-circle-xmark text-3xl mr-3"></i> : <i className="fa-solid fa-bars text-3xl mr-3"></i>}
+                        {open ? <i className="fa-solid fa-circle-xmark text-3xl mr-3">
+                            
+                        </i> : <i className="fa-solid fa-bars text-3xl mr-3"></i>}
                     </div>
                 </div>
             </nav>
