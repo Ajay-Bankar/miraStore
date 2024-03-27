@@ -12,9 +12,9 @@ const Footer = () => {
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                             <div className='flex justify-center'>
-                                <img className='sm:w-[80px] w-[100px] rounded-full sm:p-3 p-3 bg-red-800 border-2' src="/images/logo.png" alt="" />
+                                <img className='sm:w-[80px] w-[100px] h-[100px] rounded-full sm:p-3 p-3 bg-red-800 border-2' src="/images/logo3.png" alt="" />
                             </div>
-                            <span className="ml-3 text-xl">MiraStore</span>
+                            <span className="ml-3 text-xl">MiraFoods</span>
                         </a>
                         <p className="mt-2 text-sm text-gray-200">It's time to new something</p>
                     </div>
