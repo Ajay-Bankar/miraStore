@@ -20,11 +20,18 @@ const Popup = () => {
     return isOpen ? (
         <div className="fixed inset-0 flex justify-center items-start pt-8 bg-gray-800 bg-opacity-50">
             <div className="bg-white p-8 rounded-lg shadow-md">
-                <h2 className="text-xl font-semibold mb-4">Welcome to our website!</h2>
-                <p className="text-gray-700">This is a popup modal.</p>
+                <h2 className="text-xl font-semibold mb-4 text-black">Welcome to our website!</h2>
+               <input className=' flex justify-center border-2 border-black p-2 w-full placeholder-black text-red-800' type="text" placeholder='enter your email  ' />
+               <div className=' flex justify-between'>
+               <button onClick={closeModal} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">
+                Subscribe
+                </button>
+               
                 <button onClick={closeModal} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">
                     Close
                 </button>
+               </div>
+              
             </div>
         </div>
     ) : null;

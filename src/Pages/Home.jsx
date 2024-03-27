@@ -11,7 +11,7 @@ import Popup from '../components/Popup'
 const Home = () => {
   return (
     <div className=' text-white '>
-      {/* <Popup/> */}
+      <Popup/>
       
       <Navbar />
       <Category />

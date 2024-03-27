@@ -14,3 +14,27 @@
 .scrollbar-hidden::-webkit-scrollbar {
     display: none;
 }
+
+@keyframes marquee-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee-animation-alternate {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% + 100vw));
+    }
+  }
+  .marquee {
+    animation: marquee-animation 20s linear infinite;
+    
+  }
+  
+  
