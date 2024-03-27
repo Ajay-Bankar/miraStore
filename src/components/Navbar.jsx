@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className=' w-full'>
             <nav className='flex flex-col lg:flex-row md:flex-row justify-between sm:px-5 sm:mt-5 mt-3 '>
                 <div className='flex justify-center'>
-                    <img className='sm:w-[130px] w-[100px] h-[100px] rounded-full sm:p-5 p-3 bg-red-800 border-2' src="images/logo3.png" alt="" />
+                    <img className='sm:w-[130px] sm:h-[130px] sm:rounded-full w-[100px] h-[100px] rounded-full sm:p-5 p-3 bg-red-800 border-2' src="images/logo3.png" alt="" />
                 </div>
                 {/* <CurrtDateTime/> */}
 
