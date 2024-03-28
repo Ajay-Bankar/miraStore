@@ -1,16 +1,25 @@
 import React from 'react'
 import NonVegData from './NonVegData';
 import NonVegCard from './NonVegCard';
-
+import toast,{Toaster} from 'react-hot-toast';
 
 
 
 
 const NonVegItem = () => {
-    console.log(NonVegItem);
+
+  const handleToast = (name) => {
+
+      toast.success(`Added ${name} to cart`);
+    }
+
 
   return (
-
+    <>
+ <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
 
 
     
@@ -26,12 +35,14 @@ const NonVegItem = () => {
                 desc={food.desc}
                 rating={food.rating}
                 img={food.img}
+                handleToast={handleToast}
                
                 />
             )
         })}
      
     </div>
+    </>
 
   )
 }

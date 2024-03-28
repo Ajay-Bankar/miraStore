@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import NonVegItem from '../components/nonvegcompo/NonVegItem'
 import Footer from '../components/Footer'
 import NonImageSlide from '../components/nonvegcompo/NonImageSlide'
+import Cart from '../components/Cart'
 
 const Nonveg = () => {
   return (
@@ -14,6 +15,7 @@ const Nonveg = () => {
 
 
       <NonVegItem />
+      <Cart/>
       <Footer />
 
 

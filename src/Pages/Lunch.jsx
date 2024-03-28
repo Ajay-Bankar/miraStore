@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import LunchItem from '../components/lunchcompo/LunchItem'
 import Footer from '../components/Footer'
 import Marq from '../components/Marq'
+import Cart from '../components/Cart'
 
 const Lunch = () => {
   return (
@@ -11,6 +12,7 @@ const Lunch = () => {
       
       <LunchItem/>
       {/* <Marq/> */}
+      <Cart/>
       <Footer/>
     </div>
   )

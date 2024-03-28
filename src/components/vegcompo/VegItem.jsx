@@ -3,14 +3,24 @@ import React from 'react'
 
 import VegCard from './VegCard'
 import VegData from './VegData'
+import toast, {Toaster} from 'react-hot-toast'
 
 
 const VegItem = () => {
-    console.log(VegItem);
+    
+    const handleToast = (name) => {
+
+      toast.success(`Added ${name} to cart`);
+    }
 
   return (
+    <>
+   
 
-
+   <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
 
     
     <div className=' sm:flex sm:flex-wrap sm:gap-10 justify-center ml-5 sm:justify-center sm:my-10 grid grid-cols-2  '>
@@ -25,12 +35,14 @@ const VegItem = () => {
                 desc={food.desc}
                 rating={food.rating}
                 img={food.img}
+                handleToast={handleToast}
                
                 />
             )
         })}
      
     </div>
+    </>
 
   )
 }

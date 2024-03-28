@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import DinnerItem from '../components/dinnercompo/DinnerItem'
 import Footer from '../components/Footer'
+import Cart from '../components/Cart'
 
 const Dinner = () => {
   return (
@@ -11,6 +12,7 @@ const Dinner = () => {
 
    
       <DinnerItem/>
+      <Cart/>
       <Footer/>
        
       

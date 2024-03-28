@@ -2,13 +2,25 @@ import React from 'react'
 
 import DinnerData from './DinnerData';
 import DinnerCard from './DinnerCard';
+import toast, {Toaster} from 'react-hot-toast';
+
+
 
 
 const DinnerItem = () => {
+  const handleToast = (name)=>{
+
+    toast.success(`Added${name} to the cart`);
+
+  }
    
 
   return (
-
+    <>
+ <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
 
 
     
@@ -24,13 +36,14 @@ const DinnerItem = () => {
                 desc={food.desc}
                 rating={food.rating}
                 img={food.img}
+                handleToast={handleToast}
                
                 />
             )
         })}
      
     </div>
-
+    </>
   )
 }
 

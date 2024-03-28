@@ -5,6 +5,7 @@ import VegItem from '../components/vegcompo/VegItem'
 import Slider from '../components/Slider'
 import FoodItem from '../components/FoodItem'
 import Footer from '../components/Footer'
+import Cart from '../components/Cart'
 
 
 const Veg = () => {
@@ -20,6 +21,7 @@ const Veg = () => {
       
       
       <VegItem/>
+      <Cart/>
       <Footer/>
       
     

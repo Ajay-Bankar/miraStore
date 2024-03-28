@@ -33,16 +33,16 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className=' sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover'  src="/images/non1.jpg" />
+          <img className=' sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover'  src="/images/slide1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover' src="/images/non2.jpg" />
+          <img className='sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover' src="/images/slide2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className=' sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover' src="/images/non3.jfif" />
+          <img className=' sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover' src="/images/slide3.avif" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover' src="/images/non4.jpg" />
+          <img className='sm:w-full sm:h-[350px] w-full h-[130px] sm:object-cover object-cover' src="/images/slide4.jpg" />
         </SwiperSlide>
       </Swiper>
     </>
