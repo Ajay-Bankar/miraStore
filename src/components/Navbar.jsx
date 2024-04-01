@@ -23,17 +23,17 @@ const Navbar = () => {
 
                 <div className='flex justify-between px-2'>
                     <div className='sm:p-7 mt-5 p-0 ml-2'>
-                        <input onChange={(e) => dispatch(setSearch(e.target.value))} className='sm:w-[350px] sm:h-[50px] w-[250px]  h-[35px] rounded-lg outline-none text-black' type="text" placeholder='Search Now' />
+                        <input onChange={(e) => dispatch(setSearch(e.target.value))} className='sm:w-[350px] sm:h-[50px] w-[250px] h-[35px] rounded-lg outline-none text-black' type="text" placeholder='Search Now' />
                     </div>
 
-                    <div onClick={toggleLoginForm} className='mt-5 p-0 sm:hidden block'>
-                        {openLoginForm ? <i className="fa-solid fa-circle-xmark text-3xl mr-3"></i> : <i className="fa-solid fa-bars text-3xl mr-3"></i>}
+                    <div className="mt-5 px-2 sm:mt-12">
+                        <button onClick={toggleLoginForm} className="sm:text-2xl text-sm font-bold sm:border-2 p-1">
+                            LOGIN
+                        </button>
                     </div>
                 </div>
 
-                <div className='px-2 sm:p-7'>
-                    <button onClick={toggleLoginForm} className='border-2 mt-5 text-3xl font-bold px-2'>LOGIN</button>
-                </div>
+               
             </nav>
 
             {/* Popup Login Form */}
@@ -46,9 +46,9 @@ const Navbar = () => {
                             </button>
                         </div>
                         <h2 className="text-2xl mb-4">Login Form</h2>
-                        <div className=' flex flex-col gap-5 items-center'>
-                            <label >Username<input type="text" placeholder='Enter Username' /></label>
-                            <label >Password<input type="text" placeholder='Enter Password' /></label>
+                        <div className='flex flex-col gap-5 items-center'>
+                            <label>Username<input type="text" placeholder='Enter Username' /></label>
+                            <label>Password<input type="text" placeholder='Enter Password' /></label>
                         </div>
                     </div>
                 </div>
