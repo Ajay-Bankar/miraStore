@@ -27,7 +27,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="mt-5 px-2 sm:mt-12">
-                        <button onClick={toggleLoginForm} className="sm:text-2xl text-sm font-bold sm:border-2 p-1">
+                        <button onClick={toggleLoginForm} className="sm:text-2xl text-sm font-bold sm:border-2 border-2 rounded-lg p-1 bg-green-600">
                             LOGIN
                         </button>
                     </div>
@@ -40,15 +40,17 @@ const Navbar = () => {
             {openLoginForm && (
                 <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50 transition-all duration-1000">
                     <div className="bg-white text-black p-8 rounded-lg shadow-lg">
-                        <div className="flex justify-end">
+                        <div className="flex justify-between mb-5">
+                        <h2 className="text-2xl font-bold ">Login Form</h2>
                             <button onClick={closeLoginForm}>
                                 <i className="fa-solid fa-xmark text-2xl"></i>
                             </button>
+                       
+                        
                         </div>
-                        <h2 className="text-2xl mb-4">Login Form</h2>
                         <div className='flex flex-col gap-5 items-center'>
-                            <label>Username<input type="text" placeholder='Enter Username' /></label>
-                            <label>Password<input type="text" placeholder='Enter Password' /></label>
+                            <label className='   '>Username<input className=' ml-4 border-2' type="text" placeholder='    Enter Username' /></label>
+                            <label>Password<input className='ml-4 border-2' type="text" placeholder='    Enter Password' /></label>
                         </div>
                     </div>
                 </div>
