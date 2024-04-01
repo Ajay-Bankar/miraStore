@@ -7,6 +7,7 @@ import Slider from '../components/Slider'
 import Nonveg from './Nonveg'
 import Footer from '../components/Footer'
 import Popup from '../components/Popup'
+import NonImageSlide from '../components/nonvegcompo/NonImageSlide'
 
 const Home = () => {
   return (
@@ -16,9 +17,11 @@ const Home = () => {
       <Navbar />
       <Category />
       
-      <Slider/>
+      {/* <Slider/> */}
+     
       
       <FoodItem />
+      <NonImageSlide/>
       <Cart />
       <Footer/>
 
