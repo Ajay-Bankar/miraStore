@@ -15,8 +15,12 @@ const App = () => {
   return (
     <div>
        <BrowserRouter>
+
+       
        <Routes>
         {/* <Popup/> */}
+
+        
         
         <Route path='/' element = {<Home />} />
         <Route path='success' element = {<Success />} />
