@@ -15,10 +15,13 @@ const Cart = () => {
     return (
         <div>
             <div className={`fixed right-0 top-0 w-full bg-gray-600 h-full p-5 text-white sm:w-[23vw] mb-3 ${activeCart ? "translate-x-0" : "translate-x-full"} transition-all duration-700 z-50`}>
-                <div className='overflow-y-scroll scrollbar-hidden overflow-hidden scroll-smooth sm:h-[450px] h-[350px]'>
+                <div className='overflow-y-scroll scrollbar-hidden overflow-hidden scroll-smooth sm:h-[450px] h-[480px]'>
                     <div className='flex justify-between items-center my-3'>
                         <span className='text-xl font-bold'>My Order</span>
-                        <IoMdClose onClick={() => setActiveCart(!activeCart)} className='border-2 border-gray-400 text-gray-400 font-bold text-xl rounded-md hover:text-red-500 hover:border-red-500 cursor-pointer' />
+                        <IoMdClose 
+                            onClick={() => setActiveCart(!activeCart)} 
+                            className='border-2 border-gray-400 text-gray-400 font-bold text-xl rounded-md hover:text-red-500 hover:border-red-500 cursor-pointer' 
+                        />
                     </div>
                     {cartItems.length > 0 ? cartItems.map((food) => {
                         return (
@@ -33,14 +36,26 @@ const Cart = () => {
                         );
                     }) : <h2 className='text-center font-bold text-xl'>Your Cart is empty</h2>}
                 </div>
-                <div className='absolute bottom-0 mb-5'>
+                <div className='fixed bottom-0 left-0 mb-5 px-4  w-full'>
                     <h3 className='font-semibold'>Item : {totalQty}</h3>
-                    <h3 className='font-semibold'>Total Amount : {totalPrice} </h3>
-                    <hr className='w-[85vw] sm:w-[18vw] my-2 classn' />
-                    {cartItems.length > 0 && <button onClick={() => navigate("/success")} className='bg-green-500 font-bold px-3 text-white py-2 rounded-lg sm:w-[18vw] w-[85vw]'>Checkout</button>}
+                    <h3 className='font-semibold'>Total Amount : {totalPrice}</h3>
+                    <hr className='w-[85vw] sm:w-[18vw] my-2' />
+                    {cartItems.length > 0 && 
+                    <div className=' flex justify-center items-center'>
+                        <button 
+                            onClick={() => navigate("/success")} 
+                            className='bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-full'
+                        >
+                            Checkout
+                        </button>
+                        </div>
+                    }
                 </div>
             </div>
-            <FaShoppingCart onClick={() => setActiveCart(!activeCart)} className='rounded-full text-green-400 shadow-md text-5xl bg-white p-3 fixed bottom-4 right-4 animate-bounce cursor-pointer' />
+            <FaShoppingCart 
+                onClick={() => setActiveCart(!activeCart)} 
+                className='rounded-full text-green-400 shadow-md text-5xl bg-white p-3 fixed bottom-4 right-4 animate-bounce cursor-pointer' 
+            />
         </div>
     )
 }
